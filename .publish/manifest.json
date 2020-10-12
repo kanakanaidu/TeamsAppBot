@@ -1,0 +1,65 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "{version}",
+    "id": "95690929-575c-4694-98d2-86206986603d",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Kanakarajulu Thota",
+        "websiteUrl": "{baseUrl0}",
+        "privacyUrl": "{baseUrl0}/privacy",
+        "termsOfUseUrl": "{baseUrl0}/termsofuse"
+    },
+    "icons": {
+        "color": "chatbot.jpg",
+        "outline": "chatbot.jpg"
+    },
+    "name": {
+        "short": "{appname}",
+        "full": "{fullappname}"
+    },
+    "description": {
+        "short": "Short description for {appname}.",
+        "full": "Full description of {appname} for Microsoft Teams."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "{botId0}",
+            "scopes": [
+                "personal",
+                "groupchat",
+                "team"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "groupchat",
+                        "team"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Hello",
+                            "description": "Sends a hello message and @mention the sender"
+                        },
+                        {
+                            "title": "Chatroom",
+                            "description": "Send a Chatroom message and add participants by comma seperated"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
